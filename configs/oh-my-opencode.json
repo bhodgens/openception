@@ -1,0 +1,94 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
+  "preset": "default",
+  "agents": {
+    "sisyphus": {
+      "model": "opencode/big-pickle",
+      "variant": "max",
+      "skills": ["*"],
+      "mcps": ["exa_mcp_local", "context7", "github"]
+    },
+    "oracle": {
+      "model": "opencode/big-pickle",
+      "variant": "high",
+      "skills": ["*"],
+      "mcps": ["postgresql", "exa_mcp_local", "grep_app", "context7", "github"]
+    },
+    "explore": {
+      "model": "opencode/kimi-k2.5-free",
+      "variant": "low",
+      "skills": [],
+      "mcps": []
+    },
+    "librarian": {
+      "model": "opencode/minimax-m2.5-free",
+      "variant": "low",
+      "skills": [],
+      "mcps": ["exa_mcp_local", "context7", "grep_app"]
+    },
+    "designer": {
+      "model": "google/antigravity-gemini-3-pro",
+      "variant": "medium",
+      "skills": ["agent-browser", "frontend-ui-ux"],
+      "mcps": ["exa_mcp_local", "grep_app", "context7"]
+    },
+    "fixer": {
+      "model": "opencode/kimi-k2.5-free",
+      "variant": "low",
+      "skills": ["simplify"],
+      "mcps": ["context7"]
+    },
+    "hephaestus": {
+      "model": "opencode/minimax-m2.5-free",
+      "variant": "medium"
+    },
+    "multimodal-looker": {
+      "model": "google/antigravity-gemini-3-flash"
+    },
+    "prometheus": {
+      "model": "opencode/big-pickle",
+      "variant": "max"
+    },
+    "metis": {
+      "model": "google/antigravity-gemini-3-pro",
+      "variant": "medium"
+    },
+    "momus": {
+      "model": "opencode/minimax-m2.5-free",
+      "variant": "medium"
+    },
+    "atlas": {
+      "model": "opencode/kimi-k2.5-free"
+    }
+  },
+  "categories": {
+    "visual-engineering": {
+      "model": "google/antigravity-gemini-3-pro"
+    },
+    "ultrabrain": {
+      "model": "opencode/minimax-m2.5-free",
+      "variant": "xhigh"
+    },
+    "artistry": {
+      "model": "google/antigravity-gemini-3-pro",
+      "variant": "max"
+    },
+    "quick": {
+      "model": "opencode/kimi-k2.5-free"
+    },
+    "unspecified-low": {
+      "model": "opencode/minimax-m2.5-free"
+    },
+    "unspecified-high": {
+      "model": "opencode/big-pickle",
+      "variant": "max"
+    },
+    "writing": {
+      "model": "google/antigravity-gemini-3-flash"
+    },
+    "deep": {
+      "model": "opencode/minimax-m2.5-free",
+      "variant": "medium"
+    }
+  }
+}
